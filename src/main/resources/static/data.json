@@ -1,0 +1,6 @@
+{
+    "lignes": [
+      {"id": 1, "nom": "Ligne Directe 01", "depart": "Beni Mellal", "arrivee": "Fquih Ben Salah"},
+      {"id": 2, "nom": "Ligne 02", "depart": "Beni Mellal", "arrivee": "Kasba Tadla"}
+    ]
+  }
