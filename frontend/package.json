@@ -1,0 +1,10 @@
+{
+    "name": "transport-frontend",
+    "version": "1.0.0",
+    "dependencies": {
+      "@angular/core": "^17.0.0",
+      "@angular/common": "^17.0.0",
+      "@angular/compiler": "^17.0.0",
+      "@angular/platform-browser": "^17.0.0"
+    }
+  }
