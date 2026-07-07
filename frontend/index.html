@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Transport - Panel Admin</title>
+    <!-- استدعاء ستايل Bootstrap للألوان والجداول الاحترافية -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .navbar-brand { font-weight: bold; letter-spacing: 1px; }
+        .card { border: none; border-radius: 12px; }
+        .table-responsive { border-radius: 12px; overflow: hidden; }
+    </style>
+</head>
+<body>
+    <!-- شريط التنقل العلوي -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">🚌 TRANS-MANAGER PRO</a>
+            <span class="navbar-text text-success">● Connecté au Backend</span>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <!-- العنوان الرئيسي -->
+        <div class="row mb-4">
+            <div class="col">
+                <h2 class="fw-bold text-secondary">📑 Tableau de Bord - Suivi des Lignes & Bus</h2>
+                <p class="text-muted">Application de gestion du réseau de transport urbain (Version Angular/Spring Boot)</p>
+            </div>
+        </div>
+
+        <!-- جدول الخطوط والحافلات والمواقيت -->
+        <div class="card shadow-sm p-4">
+            <h4 class="mb-3 text-primary fw-semibold">📋 Liste des Lignes Actives</h4>
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nom de Ligne</th>
+                            <th>Ville Départ</th>
+                            <th>Ville Arrivée</th>
+                            <th>Horaire</th>
+                            <th>Statut</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lignes-table-body">
+                        <!-- هنا غاتحط البيانات تلقائياً بـ الـ JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
